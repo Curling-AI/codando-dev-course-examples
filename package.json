@@ -29,20 +29,21 @@
   "author": "Allan Baptista (allan@beanimus.com)",
   "license": "MIT",
   "dependencies": {
-    "@langchain/community": "^0.3.34",
-    "@langchain/core": "^0.3.42",
-    "@langchain/langgraph": "^0.2.55",
-    "@langchain/openai": "^0.4.4",
-    "@modelcontextprotocol/sdk": "^1.7.0",
-    "canvas": "^3.1.0",
-    "cheerio": "^1.0.0",
+    "@langchain/community": "^0.3.57",
+    "@langchain/core": "^0.3.79",
+    "@langchain/google-genai": "^0.2.18",
+    "@langchain/langgraph": "^0.2.74",
+    "@langchain/openai": "^0.4.9",
+    "@modelcontextprotocol/sdk": "^1.21.1",
+    "canvas": "^3.2.0",
+    "cheerio": "^1.1.2",
     "csv-parse": "^5.6.0",
     "d3": "^7.9.0",
     "html-to-text": "^9.0.5",
-    "langchain": "^0.3.19",
+    "langchain": "^0.3.36",
     "pdf-parse": "^1.1.1",
     "sqlite3": "^5.1.7",
-    "typeorm": "^0.3.21",
-    "zod": "^3.24.2"
+    "typeorm": "^0.3.27",
+    "zod": "^3.25.76"
   }
 }

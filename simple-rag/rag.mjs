@@ -1,9 +1,8 @@
 import path from "node:path";
 import url from "node:url";
 import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
-import { ChatOpenAI } from "@langchain/openai";
+import { ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "@langchain/openai";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
@@ -17,9 +16,9 @@ async function createRAG() {
     const docs = await loader.load();
 
     // 2. Instanciar modelo OpenAI
-    const model = new ChatOpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
-        model: "gpt-4o-mini",
+    const model = new ChatGoogleGenerativeAI({
+        apiKey: process.env.GOOGLE_API_KEY,
+        model: "gemini-2.5-flash",
         temperature: 0.3,
     });
 
@@ -34,7 +33,7 @@ async function createRAG() {
     // 4. Criar embeddings e armazenar
     const vectorstore = await MemoryVectorStore.fromDocuments(
         splits,
-        new OpenAIEmbeddings()
+        new GoogleGenerativeAIEmbeddings()
     );
     
     const retriever = vectorstore.asRetriever();
