@@ -4,6 +4,9 @@
   "description": "AI Examples for the Tech for PMs course",
   "main": "index.js",
   "scripts": {
+    "basics:inference": "node --env-file=.env ./basics/inference.mjs",
+    "basics:embeddings": "node --env-file=.env ./basics/embeddings.mjs",
+    "basics:semantic-search": "node --env-file=.env ./basics/semantic-search.mjs",
     "game-of-life": "open ./game-of-life/index.html",
     "generate-sales-data": "node --env-file=.env ./simple-neural-network/generate-sales-data.mjs",
     "multi-agent-collab": "node --env-file=.env ./multi-agent-collab/mac.mjs",
