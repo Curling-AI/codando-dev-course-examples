@@ -67,3 +67,6 @@ $RECYCLE.BIN/
 # Generated files
 simple-neural-network/sales-data.csv
 multi-agent-collab/chart.jpeg
+
+# Jupyter notebooks
+.ipynb_checkpoints/
