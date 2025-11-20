@@ -30,6 +30,13 @@ Este repositório contém exemplos de código e materiais de apoio para o curso 
     npm rum game-of-life
     ```
 
+## Instalação do Deno Notebooks
+
+1. [Instale o Jupyter](https://jupyter.org/install): `pip install jupyterlab`
+2. [Instale o Deno](https://docs.deno.com/runtime/getting_started/installation/): `npm install -g deno`
+3. Instale o kernel do Deno no Jupyter: `deno jupyter --install`
+4. Rode o Jupyter notebook na pasta do projeto: `jupyter notebook`
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
